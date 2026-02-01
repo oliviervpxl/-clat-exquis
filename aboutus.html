@@ -1,78 +1,87 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éclat Exquis</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">r
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Éclat Exquis</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="background-color: black;">
-
-<header>
-    
-        <div class="pagination"> 
-        <a style="color: wheat;" href="index.html">HOME</a>
-        <a style="color: wheat;" href="products.html">PRODUCTS</a>
-        <a style="color: wheat;" href="aboutus.html">ABOUT US</a>
-        <a style="color: wheat;" href="contact-us.html">CONTACT US</a>
-        <a href="shopping-cart.html">
-            <img src="cart.png" alt="Shopping Cart" style="width: 60px; height: 60px;">
+<body>
+<header class="header">
+    <div class="container nav">
+        <a class="brand" href="index.html">
+            <img src="black.png" alt="Éclat Exquis logo" />
+            <div class="name">Éclat Exquis</div>
         </a>
-    </div>
 
-    
+        <nav class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="aboutus.html">About</a>
+            <a href="contact-us.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
+<main class="container">
+    <section class="section">
+        <!-- CHIQUE INTERIOR HERO -->
+        <div class="about-hero card">
+            <img class="about-hero-img" src="images/interior.png" alt="Éclat Exquis interior" />
+            <div class="about-hero-overlay">
+                <div class="about-hero-kicker">Atelier / Boutique Concept</div>
+                <div class="about-hero-title">Éclat Exquis</div>
+                <div class="about-hero-sub">Warm lighting · curated racks · refined atmosphere</div>
+            </div>
+        </div>
 
-<main>
+        <!-- TEXT -->
+        <div class="card prose" style="margin-top:16px;">
+            <div class="kicker">About</div>
+            <h1>Designed for quiet confidence.</h1>
 
-    <img id="black-img" src="black.png" height="400" width="400px">
+            <p>
+                Éclat Exquis is a concept label built around timeless sophistication —
+                not trends. Clean proportions, premium fabrics, and understated details
+                that feel intentional in every environment.
+            </p>
 
-    
-<h2 style="color: white;">ABOUT US </h2>
+            <p>
+                We believe elegance is a discipline: a refined cut, a controlled palette,
+                a strong silhouette. Our pieces are made to elevate your everyday wardrobe
+                while staying effortless.
+            </p>
 
+            <p>
+                This is a concept brand — potentially a future release. The goal is to
+                build a consistent world: product, visuals, and storefront identity aligned
+                in one language.
+            </p>
 
+            <div style="margin-top:18px; border-top:1px solid var(--line); padding-top:18px;">
+                <a class="btn primary" href="products.html">View Products</a>
+                <a class="btn" href="contact-us.html">Contact</a>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer style="background-image: url(winkel.jpg);">
-<hr>
-
-<main>
-  
-
-
-
-
-<h4 style="color: wheat;">Welcome to The Essence of Timeless Sophistication, where we redefine elegance and capture the very essence of refined style. Our brand, Éclat Exquis, stands as a testament to the timeless allure of sophistication.
-</h4>
-
-
-
-<h4 style="color: wheat;">At Éclat Exquis, we believe that true sophistication transcends trends and seasons. It is an eternal essence that speaks volumes without saying a word. Our philosophy is rooted in the belief that elegance is not merely a fleeting fashion statement but a lifestyle, an attitude, and an expression of one's inner grace.
-</h4>
-
-
-<h4 style="color: wheat;">Every garment we create is a masterpiece, meticulously crafted to embody the epitome of sophistication. From the initial sketch to the final stitch, our team of artisans imbues each piece with unparalleled attention to detail and uncompromising quality.
-    We understand that true sophistication lies in the subtleties. That's why our designs are characterized by refined cuts, understated embellishments, and luxurious fabrics. Each garment exudes an air of understated luxury, effortlessly elevating your style and leaving a lasting impression wherever you go.
-    Step into a world of timeless elegance and discover our exquisite collection of clothing and accessories. Whether you're seeking the perfect ensemble for a special occasion or simply looking to elevate your everyday wardrobe, Éclat Exquis has something for every discerning taste.
-
-
-
-
-
-</h4>
-
-
-</main>
-
-<footer>
-    
-    <div style="text-align: center;">
-        <img src="modeleclat.png" alt="Basic White Image" height="600">
-      </div>
+<footer class="footer">
+    <div class="container footer-inner">
+        <div>© <span id="year"></span> Éclat Exquis</div>
+        <div>
+            <a href="products.html">Products</a> ·
+            <a href="index.html">Home</a> ·
+            <a href="contact-us.html">Contact</a>
+        </div>
+    </div>
 </footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
